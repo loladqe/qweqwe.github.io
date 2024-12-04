@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sailing Pirate</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 숨겨진 스크롤바 */
+        main {
+            height: calc(100vh - 120px);
+            overflow-y: scroll; /* 스크롤을 활성화 */
+        }
+
+        main::-webkit-scrollbar {
+            width: 0px; /* 스크롤바 너비를 0으로 설정 */
+            background: transparent; /* 스크롤바 배경을 투명하게 설정 */
+        }
+
+        main::-webkit-scrollbar-thumb {
+            background: transparent; /* 스크롤 thumb도 투명하게 설정 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pirate Sailing</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="download.html">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="screenshots">
+            <h2>Screenshots</h2>
+            <div class="screenshot-gallery">
+                <img src="default.png" alt="Screenshot 1">
+                <img src="ship.png" alt="Screenshot 2">
+                <img src="gameover.png" alt="Screenshot 3">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Unreal 5.5 Project. ALL Rights Reserved.</p>
+    </footer>
+</body>
+</html>
